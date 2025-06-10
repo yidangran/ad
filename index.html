@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国外常用网址导航 | International Website Navigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(to right, #1e5799, #2989d8, #207cca, #7db9e8);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        
+        header p {
+            margin-top: 20px;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #2a8e82;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        li {
+            margin: 5px 15px 5px 0;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #555;
+        }
+        
+        a:hover {
+            color: #2a8e82;
+            text-decoration: underline;
+        }
+        
+        .icon {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+        
+        .language-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid white;
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        
+        .language-btn:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+        
+        .language-btn.active {
+            background: white;
+            color: #1e5799;
+        }
+        
+        .en {
+            display: inline-block;
+        }
+        
+        .cn {
+            display: none;
+        }
+        
+        body.chinese .cn {
+            display: inline-block;
+        }
+        
+        body.chinese .en {
+            display: none;
+        }
+        
+        section[data-section] .section-title-cn {
+            display: none;
+        }
+        
+        section[data-section] .section-title-en {
+            display: block;
+        }
+        
+        body.chinese section[data-section] .section-title-en {
+            display: none;
+        }
+        
+        body.chinese section[data-section] .section-title-cn {
+            display: block;
+        }
+    </style>
+</head>
+<body class="english">
+    <div class="language-selector">
+        <button class="language-btn" onclick="switchLanguage('chinese')">中文</button>
+        <button class="language-btn active" onclick="switchLanguage('english')">English</button>
+    </div>
+    
+    <header>
+        <h1><span class="cn">国外常用网址导航</span><span class="en">International Website Navigation</span></h1>
+        <p>aosen.github.io</p>
+    </header>
+    
+    <div class="container">
+        <section data-section="popular">
+            <h2 class="section-title-cn">热门网站</h2>
+            <h2 class="section-title-en">Popular Websites</h2>
+            <ul>
+                <li><a href="https://www.google.com"><span class="icon">🔍</span><span class="cn">谷歌</span><span class="en">Google</span></a></li>
+                <!-- 上面的是谷歌链接，我们可以改成自己的链接 ，比如改成英文的，或者中文的，或者其他的-->
+                <li><a href="https://mail.google.com"><span class="icon">✉️</span>Gmail</a></li>
+                <li><a href="https://www.facebook.com"><span class="icon">👥</span>Facebook</a></li>
+                <li><a href="https://twitter.com"><span class="icon">🐦</span>Twitter</a></li>
+                <li><a href="https://www.youtube.com"><span class="icon">▶️</span>Youtube</a></li>
+                <li><a href="https://www.instagram.com"><span class="icon">📷</span>Instagram</a></li>
+            </ul>
+        </section>
+        
+        <section data-section="social">
+            <h2 class="section-title-cn">社交网络</h2>
+            <h2 class="section-title-en">Social Networks</h2>
+            <ul>
+                <li><a href="https://www.facebook.com">Facebook</a></li>
+                <li><a href="https://twitter.com">Twitter</a></li>
+                <li><a href="https://www.instagram.com">Instagram</a></li>
+                <li><a href="https://www.tumblr.com">Tumblr</a></li>
+                <li><a href="https://plus.google.com">Google Plus</a></li>
+                <li><a href="https://www.snapchat.com">Snapchat</a></li>
+                <li><a href="https://www.meetup.com">Meetup</a></li>
+                <li><a href="https://www.xing.com">XING</a></li>
+                <li><a href="https://hootsuite.com">Hootsuite</a></li>
+            </ul>
+        </section>
+        
+        <section data-section="media">
+            <h2 class="section-title-cn">影音图片</h2>
+            <h2 class="section-title-en">Media & Images</h2>
+            <ul>
+                <li><a href="https://www.youtube.com"><span class="cn">优兔</span><span class="en">Youtube</span></a></li>
+                <li><a href="https://vimeo.com">Vimeo</a></li>
+                <li><a href="https://www.netflix.com"><span class="cn">奈飞</span><span class="en">Netflix</span></a></li>
+                <li><a href="https://www.hulu.com">Hulu</a></li>
+                <li><a href="https://www.pandora.com">Pandora</a></li>
+                <li><a href="https://www.pinterest.com"><span class="cn">缤趣</span><span class="en">Pinterest</span></a></li>
+                <li><a href="https://www.dailymotion.com">Dailymotion</a></li>
+                <li><a href="https://photos.google.com"><span class="cn">谷歌相册</span><span class="en">Google Photos</span></a></li>
+                <li><a href="https://soundcloud.com">SoundCloud</a></li>
+                <li><a href="https://www.shutterstock.com">Shutterstock</a></li>
+                <li><a href="https://www.istockphoto.com">iStock</a></li>
+                <li><a href="https://soundcloud.com">SoundCloud</a></li>
+                <li><a href="https://www.pornhub.com">Pornhub</a></li>
+                <li><a href="https://www.redtube.com">Redtube</a></li>
+            </ul>
+        </section>
+        
+        <section data-section="blog">
+            <h2 class="section-title-cn">博客平台</h2>
+            <h2 class="section-title-en">Blogging Platforms</h2>
+            <ul>
+                <li><a href="https://wordpress.com">WordPress.com</a></li>
+                <li><a href="https://www.blogger.com">Blogger.com</a></li>
+                <li><a href="https://medium.com">Medium</a></li>
+                <li><a href="https://www.tumblr.com">Tumblr</a></li>
+                <li><a href="https://www.pixnet.net"><span class="cn">痞客邦</span><span class="en">PIXNET</span></a></li>
+            </ul>
+        </section>
+        
+        <section data-section="chinese-news">
+            <h2 class="section-title-cn">海外新闻媒体（中文）</h2>
+            <h2 class="section-title-en">International Media (Chinese)</h2>
+            <ul>
+                <li><a href="https://cn.nytimes.com"><span class="cn">纽约时报中文网</span><span class="en">NYTimes Chinese</span></a></li>
+                <li><a href="https://www.bbc.com/zhongwen"><span class="cn">BBC中文网</span><span class="en">BBC Chinese</span></a></li>
+                <li><a href="https://cn.reuters.com"><span class="cn">路透社中文网</span><span class="en">Reuters Chinese</span></a></li>
+                <li><a href="https://cn.wsj.com"><span class="cn">华尔街日报</span><span class="en">WSJ Chinese</span></a></li>
+                <li><a href="https://www.dw.com/zh"><span class="cn">德国之声</span><span class="en">DW Chinese</span></a></li>
+                <li><a href="http://www.rfi.fr/cn"><span class="cn">法国广播电台</span><span class="en">RFI Chinese</span></a></li>
+                <li><a href="http://cnnews.chosun.com"><span class="cn">朝鲜日报网</span><span class="en">Chosun Chinese</span></a></li>
+                <li><a href="https://china.kyodonews.net"><span class="cn">日本共同网</span><span class="en">Kyodo News Chinese</span></a></li>
+                <li><a href="https://asahichinese-j.com"><span class="cn">朝日新闻中文网</span><span class="en">Asahi Chinese</span></a></li>
+                <li><a href="https://www.zaobao.com"><span class="cn">新加坡联合早报</span><span class="en">Zaobao</span></a></li>
+                <li><a href="https://hk.appledaily.com"><span class="cn">香港苹果日报</span><span class="en">HK Apple Daily</span></a></li>
+                <li><a href="https://news.mingpao.com"><span class="cn">香港明报</span><span class="en">Ming Pao</span></a></li>
+                <li><a href="https://udn.com"><span class="cn">台湾联合新闻网</span><span class="en">UDN</span></a></li>
+                <li><a href="https://www.cna.com.tw"><span class="cn">台湾中央通讯社</span><span class="en">CNA</span></a></li>
+            </ul>
+        </section>
+        
+        <section data-section="foreign-news">
+            <h2 class="section-title-cn">海外新闻媒体（外文）</h2>
+            <h2 class="section-title-en">International Media (Foreign Languages)</h2>
+            <ul>
+                <li><a href="https://www.nytimes.com"><span class="cn">纽约时报</span><span class="en">The New York Times</span></a></li>
+                <li><a href="https://www.reuters.com"><span class="cn">路透社</span><span class="en">Reuters</span></a></li>
+                <li><a href="https://www.bloomberg.com"><span class="cn">彭博社</span><span class="en">Bloomberg</span></a></li>
+                <li><a href="https://www.bbc.com"><span class="cn">英国广播公司</span><span class="en">BBC</span></a></li>
+                <li><a href="https://www.independent.co.uk"><span class="cn">独立报</span><span class="en">The Independent</span></a></li>
+                <li><a href="https://time.com"><span class="cn">时代周刊</span><span class="en">Time</span></a></li>
+                <li><a href="https://www.wsj.com"><span class="cn">华尔街日报</span><span class="en">The Wall Street Journal</span></a></li>
+                <li><a href="https://www.economist.com"><span class="cn">经济学人</span><span class="en">The Economist</span></a></li>
+                <li><a href="https://www.aol.com/news"><span class="cn">美国在线新闻</span><span class="en">AOL News</span></a></li>
+                <li><a href="https://www.newyorker.com"><span class="cn">纽约客</span><span class="en">The New Yorker</span></a></li>
+                <li><a href="https://www.lemonde.fr"><span class="cn">世界报</span><span class="en">Le Monde</span></a></li>
+                <li><a href="https://www.lequipe.fr"><span class="cn">队报</span><span class="en">L'ÉQUIPE</span></a></li>
+            </ul>
+        </section>
+        
+        <section data-section="info">
+            <h2 class="section-title-cn">信息查询</h2>
+            <h2 class="section-title-en">Information Search</h2>
+            <ul>
+                <li><a href="https://www.google.com"><span class="cn">谷歌</span><span class="en">Google</span></a></li>
+                <li><a href="https://duckduckgo.com">DuckDuckGo</a></li>
+                <li><a href="https://scholar.google.com"><span class="cn">谷歌学术</span><span class="en">Google Scholar</span></a></li>
+                <li><a href="https://www.wikipedia.org"><span class="cn">维基百科</span><span class="en">Wikipedia</span></a></li>
+                <li><a href="https://zh.wikipedia.org"><span class="cn">维基百科中文</span><span class="en">Wikipedia Chinese</span></a></li>
+                <li><a href="https://wikileaks.org"><span class="cn">维基解密</span><span class="en">WikiLeaks</span></a></li>
+                <li><a href="https://archive.org"><span class="cn">互联网档案馆</span><span class="en">Internet Archive</span></a></li>
+            </ul>
+        </section>
+        
+        <section data-section="hongkong">
+            <h2 class="section-title-cn">香港网站</h2>
+            <h2 class="section-title-en">Hong Kong Websites</h2>
+            <ul>
+                <li><a href="https://hk.appledaily.com"><span class="cn">苹果日报</span><span class="en">Apple Daily</span></a></li>
+                <li><a href="https://news.mingpao.com"><span class="cn">明报</span><span class="en">Ming Pao</span></a></li>
+                <li><a href="https://www.thestandnews.com"><span class="cn">立场新闻</span><span class="en">Stand News</span></a></li>
+                <li><a href="https://theinitium.com"><span class="cn">端传媒</span><span class="en">Initium Media</span></a></li>
+                <li><a href="https://www.post852.com"><span class="cn">852邮报</span><span class="en">Post 852</span></a></li>
+                <li><a href="https://www.discuss.com.hk"><span class="cn">香港讨论区</span><span class="en">HK Discuss</span></a></li>
+                <li><a href="https://forum.hkgolden.com"><span class="cn">高登讨论区</span><span class="en">HKGolden</span></a></li>
+                <li><a href="https://www.uwants.com"><span class="cn">Uwants讨论区</span><span class="en">Uwants Forum</span></a></li>
+                <li><a href="https://www.rthk.hk"><span class="cn">香港电台</span><span class="en">RTHK</span></a></li>
+                <li><a href="https://www.singtao.com"><span class="cn">星岛日报</span><span class="en">Sing Tao Daily</span></a></li>
+                <li><a href="https://www.scmp.com"><span class="cn">南华早报</span><span class="en">South China Morning Post</span></a></li>
+            </ul>
+        </section>
+        
+        <section data-section="taiwan">
+            <h2 class="section-title-cn">台湾网站</h2>
+            <h2 class="section-title-en">Taiwan Websites</h2>
+            <ul>
+                <li><a href="https://udn.com"><span class="cn">联合新闻网</span><span class="en">UDN</span></a></li>
+                <li><a href="https://www.cna.com.tw"><span class="cn">中央通讯社</span><span class="en">CNA</span></a></li>
+                <li><a href="https://www.pixnet.net"><span class="cn">痞客邦</span><span class="en">PIXNET</span></a></li>
+                <li><a href="https://tw.yahoo.com"><span class="cn">Yahoo!奇摩</span><span class="en">Yahoo! Taiwan</span></a></li>
+            </ul>
+        </section>
+        
+        <section data-section="cloud">
+            <h2 class="section-title-cn">云服务</h2>
+            <h2 class="section-title-en">Cloud Services</h2>
+            <ul>
+                <li><a href="https://www.dropbox.com">Dropbox</a></li>
+                <li><a href="https://www.box.com">Box</a></li>
+                <li><a href="https://drive.google.com"><span class="cn">谷歌云端硬盘</span><span class="en">Google Drive</span></a></li>
+                <li><a href="https://aws.amazon.com"><span class="cn">亚马逊云服务</span><span class="en">Amazon AWS</span></a></li>
+                <li><a href="https://www.sugarsync.com">SugarSync</a></li>
+            </ul>
+        </section>
+        
+        <section data-section="work">
+            <h2 class="section-title-cn">工作协作</h2>
+            <h2 class="section-title-en">Work Collaboration</h2>
+            <ul>
+                <li><a href="https://drive.google.com"><span class="cn">谷歌云端硬盘</span><span class="en">Google Drive</span></a></li>
+                <li><a href="https://docs.google.com"><span class="cn">谷歌文档</span><span class="en">Google Docs</span></a></li>
+                <li><a href="https://calendar.google.com"><span class="cn">谷歌日历</span><span class="en">Google Calendar</span></a></li>
+                <li><a href="https://mail.google.com">Gmail</a></li>
+                <li><a href="https://hangouts.google.com"><span class="cn">谷歌环聊</span><span class="en">Google Hangouts</span></a></li>
+                <li><a href="https://slack.com">Slack</a></li>
+                <li><a href="https://www.slideshare.net">SlideShare</a></li>
+            </ul>
+        </section>
+    </div>
+    
+    <footer>
+        <p>
+            <span class="cn">此页面由 GitHub Pages 生成</span>
+            <span class="en">This page was generated by GitHub Pages</span>
+        </p>
+    </footer>
+    
+    <script>
+        function switchLanguage(lang) {
+            if (lang === 'chinese') {
+                document.body.className = 'chinese';
+                document.querySelectorAll('.language-btn').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.language-btn')[0].classList.add('active');
+            } else {
+                document.body.className = 'english';
+                document.querySelectorAll('.language-btn').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.language-btn')[1].classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html> 
